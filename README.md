@@ -12,8 +12,6 @@ LMS Hunarmand is a professional MERN stack Learning Management System (LMS) craf
 - **Database**: MongoDB (Mongoose)
 - **Security & Auth**: JWT (JSON Web Tokens), Bcrypt for password hashing
 
-## Screenshots
-*(Please add your screenshot images to a `docs/` folder in the root directory)*
 
 ### Home Page
 ![Home Page](./docs/home.png)
