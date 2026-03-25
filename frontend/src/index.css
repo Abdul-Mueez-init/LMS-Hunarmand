@@ -1,0 +1,152 @@
+:root {
+  --indigo-50: #eef2ff;
+  --indigo-100: #e0e7ff;
+  --indigo-300: #a5b4fc;
+  --indigo-500: #6366f1;
+  --indigo-600: #4f46e5;
+  --indigo-900: #312e81;
+  
+  --slate-50: #f8fafc;
+  --slate-100: #f1f5f9;
+  --slate-200: #e2e8f0;
+  --slate-400: #94a3b8;
+  --slate-800: #1e293b;
+  --slate-900: #0f172a;
+  
+  --glass-bg: rgba(255, 255, 255, 0.75);
+  --glass-border: rgba(255, 255, 255, 0.4);
+  --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.05);
+}
+
+body {
+  font-family: 'Inter', 'Outfit', sans-serif;
+  background-color: var(--slate-50);
+  color: var(--slate-800);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--indigo-900);
+  font-weight: 700;
+}
+
+/* Glassmorphism Card Element */
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.1);
+}
+
+/* Rounded Corners & Overrides */
+.card {
+  border-radius: 16px;
+  border: none;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
+
+.btn, .form-control, .form-select {
+  border-radius: 12px !important;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: var(--indigo-300);
+  box-shadow: 0 0 0 0.25rem rgba(99, 102, 241, 0.25);
+}
+
+/* Indigo Buttons */
+.btn-primary {
+  background-color: var(--indigo-600);
+  border-color: var(--indigo-600);
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: var(--indigo-900);
+  border-color: var(--indigo-900);
+  transform: scale(1.02);
+}
+
+.btn-outline-primary {
+  color: var(--indigo-600);
+  border-color: var(--indigo-600);
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--indigo-600);
+  color: #fff;
+  transform: scale(1.02);
+}
+
+/* Badges */
+.badge {
+  border-radius: 8px;
+  padding: 0.5em 0.8em;
+  font-weight: 600;
+}
+
+.bg-primary {
+  background-color: var(--indigo-600) !important;
+}
+
+.bg-primary-soft {
+  background-color: var(--indigo-50);
+  color: var(--indigo-600);
+}
+
+/* Text Colors */
+.text-primary {
+  color: var(--indigo-600) !important;
+}
+
+.text-muted {
+  color: var(--slate-400) !important;
+}
+
+/* Navbar */
+.navbar {
+  background-color: white !important;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.navbar .nav-link {
+  color: var(--slate-800) !important;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navbar .nav-link:hover {
+  color: var(--indigo-600) !important;
+}
+
+.navbar-brand {
+  color: var(--indigo-900) !important;
+  font-weight: 800;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--slate-50);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--slate-400);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--indigo-300);
+}
